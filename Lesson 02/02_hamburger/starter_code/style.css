@@ -1,7 +1,21 @@
+.container {
+  max-width: 750px;
+  margin: 25vh auto;
+}
+
 header {
-  font-size: 0.5em;
+  font-size: 0.75em;
+  color: blue;
+  border-bottom: 5px solid black;
 }
 
 h1 {
   font-size: 2em;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid black;
+  justify-content: space-between;
 }
