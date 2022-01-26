@@ -1,11 +1,13 @@
 html {
-  font-family: "Quicksand", sans-serif;
-  font-size: 16px;
+  font-family: "Georgia", sans-serif;
+  font-size: 18px;
   max-width: 50vw;
   margin: 0 auto;
   padding: 2em 0;
-  line-height: 1.2em;
+  line-height: 1.5;
   scroll-behavior: smooth;
+  background-color: #f6f6f6;
+  color: #05080c;
 }
 
 section {
@@ -17,10 +19,6 @@ h2,
 h3 {
   font-weight: 900;
   padding: 0.3em 0;
-}
-
-p {
-  font-family: "Times New Roman", Times, serif;
 }
 
 li {
@@ -39,16 +37,21 @@ li {
 .map {
   float: right;
   height: 300px;
-  padding-left: 30px;
+  margin-left: 15px;
 }
 
 th {
-  background-color: #000;
+  background-color: #222222;
   color: #fff;
   padding: 10px 10px;
 }
 
 td {
   padding: 10px 10px;
-  background-color: #eee;
+  background-color: #eeeeee;
+}
+
+.made_by {
+  text-align: center;
+  font-size: 12px;
 }
