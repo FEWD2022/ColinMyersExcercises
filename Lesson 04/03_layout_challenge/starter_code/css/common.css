@@ -1,0 +1,7 @@
+/* Visible Box */
+
+.visibleBox {
+  background: rgb(150, 150, 165);
+  min-height: 100px;
+  box-sizing: border-box;
+}

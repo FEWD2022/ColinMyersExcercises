@@ -1,0 +1,20 @@
+.exerciseHeader,
+.exerciseFooter,
+.exerciseMain {
+  margin: 0 10px 10px 10px;
+}
+
+.exerciseMain {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.exerciseMainContent {
+  flex-grow: 3;
+  height: 400px;
+}
+
+.exerciseMainAside {
+  flex-grow: 1;
+}

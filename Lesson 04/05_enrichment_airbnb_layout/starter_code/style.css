@@ -1,0 +1,56 @@
+html {
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  background-color: #eee;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.card {
+  background-position: center;
+  height: 280px;
+  width: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.card_text {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card_1 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/san-francisco-2.jpg);
+}
+
+.card_2 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/new-york.jpg);
+}
+
+.card_3 {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/london.jpg);
+}
+
+.cta {
+  padding: 10px 45px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta:hover {
+  opacity: 0.5;
+}
