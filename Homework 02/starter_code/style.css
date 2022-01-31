@@ -1,20 +1,39 @@
 /* ################################################## */
 /* ########### Global classes / overrides ########### */
 /* ################################################## */
-h1, h2, h3, h4, h5, h6, p {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: "Lato", sans-serif;
 }
 
 p {
   font-size: 18px;
   line-height: 1.5;
-  padding: 15px 0;
+  padding: 20px 0;
+  font-family: "Lato", sans-serif;
 }
 
 /* Fonts, classes are so I can reuse the styles on a variety of elements */
-.merriweather { font-family: 'Merriweather', serif; }
-      .oswald { font-family: 'Oswald', sans-serif; }
-        .lato { font-family: 'Lato', sans-serif; }
+.merriweather {
+  font-family: "Merriweather", serif;
+}
+.oswald {
+  font-family: "Oswald", sans-serif;
+}
+.lato {
+  font-family: "Lato", sans-serif;
+}
 
 /* Colors */
 /* Dark yellow: #f2ff00 */
@@ -24,3 +43,115 @@ p {
 
 /* Background Image */
 /* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em 1em;
+  background-color: black;
+  border-bottom: 5px solid #f2ff00;
+}
+
+.logo {
+  color: #f2ff00;
+  text-decoration: none;
+}
+
+.nav_list {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav_link:hover {
+  color: #f2ff00;
+}
+
+.banner {
+  background-color: gray;
+  text-align: center;
+  font-style: italic;
+}
+
+.banner_message {
+  font-size: 1.75em;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.underline {
+  border-bottom: 3px solid #f2ff00;
+}
+
+.btn {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #adadad;
+  padding: 0.25em 4em;
+  color: rgb(31, 24, 24);
+  width: 100%;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+}
+
+.btn_primary {
+  background-color: #f2ff00;
+  border-bottom: 2px solid #ffd900;
+  opacity: 1;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-end;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg);
+  margin: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  width: 100%;
+  align-items: center;
+}
+
+.card_right {
+  max-width: 25%;
+  padding: 4em;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-right: 1em;
+}
+
+.row {
+  display: flex;
+  gap: 25px;
+  padding: 2em 1em;
+  width: 100%;
+}
+
+.card {
+  width: 33%;
+}
+
+.card h3 {
+  font-family: "Merriweather", serif;
+}
+
+.card:nth-child(-n + 2) {
+  border-right: 1px solid #adadad;
+}
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding-left: 1em;
+}
