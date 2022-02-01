@@ -170,7 +170,7 @@ a {
 }
 
 .oldTimeNewsPaper-corestyles-contentImage {
-  width: 50%;
+  max-width: 100%;
   border: 1px solid rgb(155, 155, 155);
   margin: 16px auto;
   display: block;
