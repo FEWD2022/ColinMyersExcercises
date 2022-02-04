@@ -1,16 +1,17 @@
-
-.exerciseHeader, .exerciseFooter, .exerciseMain {
-    margin: 0 10px 10px 10px;
+.exerciseHeader,
+.exerciseFooter,
+.exerciseMain {
+  margin: 0 10px 10px 10px;
 }
 
 .exerciseMain {
-
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
 }
 
 .exerciseMainContent {
-
 }
 
 .exerciseMainAside {
-
 }

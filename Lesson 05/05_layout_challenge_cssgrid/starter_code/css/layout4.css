@@ -9,51 +9,44 @@ Use Flex-wrap, flex-direction, and flex to control how the header spaces and siz
 
  */
 
-
-
-.exerciseFooter, .exerciseMain {
-    margin: 0 10px 10px 10px;
+.exerciseFooter,
+.exerciseMain {
+  margin: 0 10px 10px 10px;
 }
 
 .exerciseHeader {
-
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .exerciseHeaderLogo {
-    width: 200px;
-    height: 80px;
+  width: 200px;
+  height: 80px;
 }
 
-
 .exerciseHeaderNav {
-
 }
 
 .exerciseHeaderNav ul {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 .exerciseHeaderNav ul li {
-
-
+  list-style-type: none;
 }
-
 
 .exerciseMainContent {
-
 }
 
-
 .exerciseAdditionalFeatures {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .exerciseAdditionalFeatures .exerciseMarketingFeature {
-
-
 }
 
 .exerciseAdditionalFeatures .exerciseMarketingFeature:first-child {
-
 }

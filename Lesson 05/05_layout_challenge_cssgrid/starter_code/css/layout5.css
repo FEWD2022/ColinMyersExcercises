@@ -1,61 +1,64 @@
-
-.exerciseFooter, .exerciseMain {
-    margin: 0 10px 10px 10px;
+.exerciseFooter,
+.exerciseMain {
+  margin: 0 10px 10px 10px;
 }
 
 .exerciseHeader {
-
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .exerciseHeaderLogo {
-    width: 200px;
-    height: 80px;
-
+  width: 200px;
+  height: 80px;
+  margin: 10px;
 }
 
 .exerciseHeaderNav {
-
 }
 
 .exerciseHeaderNav ul {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 .exerciseHeaderNav ul li {
-
-
+  list-style-type: none;
 }
-
 
 /* Main */
 
 .exerciseMain {
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 10px;
 }
 
 .exerciseMainLeftNav {
-
-
+  display: grid;
+  margin-right: 10px;
 }
 
 .exerciseMainContent {
-
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-end: span 4;
+  gap: 10px;
 }
 
 .exerciseMainContent > * {
-    margin: 0;
 }
 
 .exerciseMainContentBanner {
-
+  grid-template-columns: 3fr 1fr;
+  grid-column-end: span 4;
 }
 
 .exerciseMainContentSubBanner {
-
+  grid-column-end: span 3;
 }
 
 .exerciseMainContentBlock {
-
 }

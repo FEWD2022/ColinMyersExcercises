@@ -1,0 +1,215 @@
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 0px;
+}
+
+p {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.logo {
+  height: 30px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.centered_white {
+  text-align: center;
+  color: #fff;
+}
+
+.hero {
+  background-image: url(./melbourne.jpg);
+  background-color: #0e0f0f;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 1em 2em;
+  background-color: #ff5358;
+  color: #fff;
+  max-width: 250px;
+  font-size: 1.5em;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.sub_hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: #efefef;
+  gap: 50px;
+  padding: 5 0.5em;
+}
+
+.sub_hero_card {
+  border: 1px solid #dbdbdb;
+  margin: 5em 1em;
+}
+
+.sub_hero_card_header {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0.5em 1em;
+}
+
+.sub_hero_card_body {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  padding: 1em;
+}
+
+.sub_hero_card_body p {
+  font-size: 12px;
+}
+
+.featured {
+  text-align: center;
+  padding: 2em;
+}
+
+.featured_title {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.featured_subtitle {
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.card {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+}
+
+.card_text {
+  align-items: center;
+  margin: auto 0;
+}
+
+.card_footer {
+  background-color: #efefef;
+  justify-content: flex-end;
+  padding: 2em;
+  margin: 0;
+}
+
+.Fitzroy {
+  background-image: url(./fitzroy.jpg);
+  background-size: cover;
+}
+
+.Kilda {
+  background-image: url(./st-kilda.jpg);
+  background-size: cover;
+}
+
+.Central {
+  background-image: url(./central-business-district.jpg);
+  background-size: cover;
+}
+
+footer {
+  background-color: #0e0f0f;
+  padding: 5em;
+}
+
+footer p {
+  margin: 0;
+  font-size: 12px;
+  border-top: 1px solid darkgrey;
+  padding: 3em 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .sub_hero {
+    flex-direction: column;
+  }
+
+  .sub_hero_card {
+    margin: 1em;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    min-width: 100%;
+  }
+}
+
+/* Colors */
+/* Redish / Pink: #ff5358 */
+/* Dark red for button hover: #e00007 */
+/* Very light gray for backgrounds: #efefef */
+/* Very light gray for borders: #dbdbdb */
+/* Dark gray for footer: #0e0f0f */
+/* White for text and backgrounds: #FFFFFF */
+
+/* Background image links */
+/* Hero: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg */
+/* Fitzroy: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg */
+/* St. Kilda: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg  */
+/* CBD: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg */
