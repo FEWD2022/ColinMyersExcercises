@@ -1,17 +1,14 @@
-### Houses: $774,900 2bd 3ba 3615 10th St NW #8 Columbia Heights, Washington, DC
-$600,000 3 bd 2 ba 3120 Park Pl NW Pleasant Plains, Washington, DC $630,000 2bd
-3ba 1500 sq ft 3221 Warder St NW #1 Pleasant Plains, Washington, DC $1,295,000
-9bd 6ba 705 Kenyon St NW Pleasant Plains, Washington, DC $1,049,000 6bd 4ba 2688
-sqft 1363 Oak St NW Columbia Heights, Washington, DC $720,000 3bd 3ba 1850 sqft
-1307 Irving St NW #1 Columbia Heights, Washington, DC $760,000 3bd 3ba 1920 sqft
-752 Park Rd NW Columbia Heights, Washington, DC $760,000 3bd 3ba 1920 sqft 752
-Park Rd NW Columbia Heights, Washington, DC $999,000 2bd 4ba 2395 sqft 3511 17th
-ST NW #7 Mount Pleasant, Washington, DC $474,500 2bd 1ba 964 sqft 1356 Kenyon St
-NW #8 Columbia Heights, Washington, DC $399,000 1bd 1ba 462 sqft 3205 Georgia
-Ave NW, #505 Pleasant Plains, Washington, DC ### Images: Logo: in the images/
-folder House pics:
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-1.jpg
-https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-2.jpg
+### Houses: $600,000 3 bd 2 ba 3120 Park Pl NW Pleasant Plains, Washington, DC
+$630,000 2bd 3ba 1500 sq ft 3221 Warder St NW #1 Pleasant Plains, Washington, DC
+$1,295,000 9bd 6ba 705 Kenyon St NW Pleasant Plains, Washington, DC $1,049,000
+6bd 4ba 2688 sqft 1363 Oak St NW Columbia Heights, Washington, DC $720,000 3bd
+3ba 1850 sqft 1307 Irving St NW #1 Columbia Heights, Washington, DC $760,000 3bd
+3ba 1920 sqft 752 Park Rd NW Columbia Heights, Washington, DC $760,000 3bd 3ba
+1920 sqft 752 Park Rd NW Columbia Heights, Washington, DC $999,000 2bd 4ba 2395
+sqft 3511 17th ST NW #7 Mount Pleasant, Washington, DC $474,500 2bd 1ba 964 sqft
+1356 Kenyon St NW #8 Columbia Heights, Washington, DC $399,000 1bd 1ba 462 sqft
+3205 Georgia Ave NW, #505 Pleasant Plains, Washington, DC ### Images: Logo: in
+the images/ folder House pics:
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-3.jpg
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-4.jpg
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/house-5.jpg

@@ -11,6 +11,11 @@ html {
   font-family: "Lato", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #3a8e52;
+}
+
 /* ========== Navigation ========== */
 
 .trulia-nav {
@@ -67,4 +72,136 @@ html {
 
 .trulia-grid {
   background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 1em 1em;
+}
+
+.trulia-grid-item {
+  background-color: #fff;
+  border-radius: 10px;
+  max-height: 400px;
+}
+
+.new-box img {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.trulia-house-price * {
+  margin: 0;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+.trulia-house-facts {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trulia-house-stats ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.trulia-house-stats li {
+  list-style-type: none;
+}
+
+.trulia-article-icon {
+  height: 16px;
+  padding-right: 5px;
+}
+
+.trulia-house-address {
+  color: #787d81;
+  padding: 0 10px;
+}
+
+/* ========== Main Footer ========== */
+.trulia-grid-footer {
+  background-color: #fff;
+  text-align: center;
+}
+
+.trulia-grid-footer ul,
+.trulia-page-footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.trulia-location-info {
+  padding: 2em;
+}
+
+/* ========== Footer ========== */
+
+.trulia-page-footer {
+  background-color: #474e52;
+  color: #b1b6bb;
+  text-align: center;
+  padding: 2em;
+  margin: 0;
+  font-size: 14px;
+}
+
+.trulia-page-footer p {
+  font-size: 12px;
+}
+
+.trulia-page-footer a {
+  color: #fff;
+}
+
+/* ========== Hover glow ========== */
+
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+  cursor: pointer;
+}
+.hvr-glow:hover,
+.hvr-glow:focus,
+.hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+/* ========== Responsiveness ========== */
+
+@media only screen and (max-width: 768px) {
+  .trulia-nav {
+    flex-direction: column;
+  }
+
+  .trulia-nav-right {
+    margin: 1em auto;
+    padding: 0;
+  }
+
+  .trulia-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .trulia-grid-footer ul {
+    margin: 1em;
+  }
+
+  .trulia-page-footer ul {
+    flex-direction: column;
+  }
 }
