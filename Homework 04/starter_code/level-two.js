@@ -1,0 +1,23 @@
+/*
+ * DOTS: Level Two
+ *
+ */
+let score = 0;
+let arenaEl = document.querySelector(".js-arena");
+let scoreEl = document.querySelector(".js-score");
+
+arenaEl.addEventListener("click", (event) => {
+  if (event.target.classList.contains("js-ball")) {
+    score += 10;
+    console.log(score);
+    scoreEl.innerHTML = score;
+  }
+
+  if (score >= 100) {
+    declareWinner();
+  }
+});
+
+function declareWinner() {
+  document.body.classList.add("game-over");
+}
