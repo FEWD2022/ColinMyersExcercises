@@ -15,7 +15,6 @@ arenaEl.addEventListener("click", (event) => {
 
   if (score >= 100) {
     declareWinner();
-    console.log("game over");
   }
 });
 
