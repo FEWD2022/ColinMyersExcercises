@@ -114,6 +114,7 @@ a {
   height: 40px;
   display: flex;
   justify-content: space-between;
+  padding: 0 1rem;
 }
 
 .trulia-nav ul {
@@ -141,7 +142,7 @@ a {
 .trulia-nav-right {
   align-items: center;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .trulia-nav-item,

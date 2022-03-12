@@ -1,27 +1,81 @@
 /* Featured and Expanded Item */
-
-.trulia-featured-grid-item {
-  height: auto;
+.trulia-grid-item {
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
 }
 
 .trulia-featured-grid-item .trulia-house-image {
-  height: 320px;
+  height: 360px;
 }
 
 .trulia-featured-grid-item {
   grid-column: span 2;
-  grid-row: 1 / 3;
+  grid-row: span 2;
   font-size: 1.5rem;
+  height: 100%;
 }
 
-.trulia-featured-grid-item .trulia-hoise-facts {
+.trulia-featured-grid-item > .trulia-house-facts {
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
 
 .trulia-featured-grid-item h1 {
   font-size: 2rem;
 }
 
-.trulia-featured-grid-item ul {
-  padding-top: 20px;
+@media (max-width: 1200px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .trulia-nav-toggle {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    min-width: 45px;
+    min-height: 45px;
+    font-size: 2rem;
+  }
+
+  .trulia-nav-mobilehide {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+    transition: 3s ease-in-out;
+  }
+
+  .row {
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 25px;
+  }
+
+  .trulia-nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1em;
+  }
+
+  .trulia-nav-item {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .trulia-nav-left {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .trulia-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
