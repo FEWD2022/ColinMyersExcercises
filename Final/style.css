@@ -1,4 +1,11 @@
 /* ----- Bootstrap Styles ----- */
+body {
+  padding-top: 100px;
+}
+
+img {
+  max-width: 100%;
+}
 
 .navbar-toggler,
 .navbar-toggler:active {
@@ -23,18 +30,12 @@
   border: none;
   color: #fff;
   border-radius: 10em;
-  font-weight: bold;
 }
 
 .btn:hover {
   background-color: orangered;
   color: #fff;
-  opacity: 0.9;
-  font-weight: bold;
-}
-
-img {
-  max-width: 100%;
+  opacity: 0.8;
 }
 
 .form-control {
@@ -45,7 +46,7 @@ img {
 
 h1 {
   font-weight: bold;
-  padding: 5em 0 2em 0;
+  padding: 0.9em 0;
   font-size: 2rem;
 }
 
@@ -57,11 +58,11 @@ h2 {
 /* ----- Hero Section ----- */
 
 .row-hero-coop {
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .hero-content {
-  padding: 0 10em;
+  padding: 0 auto;
   justify-content: center;
   align-items: center;
 }
@@ -77,17 +78,93 @@ h2 {
 /* ----- Menu Section ----- */
 .menu {
   background-color: orangered;
-  padding: 5em 1em;
+  padding: 6em 1em;
 }
+
+.menu-title {
+  color: #fff;
+}
+
+.card {
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+
+/* ----- Parallax Image ----- */
+/* .parallax {
+  background-image: url(./Images/Posters.png);
+  background-color: #e5e5e5;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+} */
 
 /* ----- Volunteer Section ----- */
 
 .volunteer {
-  padding: 10em 0;
+  padding: 12em 0;
 }
 
 .overflow-img {
   margin-left: -200px;
+}
+
+.volunteer-section {
+  display: flex;
+  gap: 1em;
+  padding: 5em 0;
+  align-items: center;
+}
+
+.volunteers-img {
+  max-width: 60%;
+  margin-left: -120px;
+}
+
+.volunteers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.newsletter {
+  background-color: orangered;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.CTA-title {
+  font-size: 2rem;
+}
+
+.newsletter-input {
+  border-radius: 20em;
+  border: none;
+  padding: 10px;
+}
+
+.newsletter-text {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.secondary {
+  background-color: #fff;
+  color: orangered;
+  font-weight: normal;
+  border: 1px solid orangered;
+}
+
+.secondary:hover {
+  background-color: #fff;
+  color: orangered;
+  font-weight: normal;
 }
 
 /* ----- Footer ----- */
@@ -106,3 +183,42 @@ footer {
   margin: 0;
   padding: 1em 0;
 }
+
+/* ----- Media Queries ----- */
+@media screen and (min-width: 1300px) {
+  .hero-image {
+    min-height: 900px;
+  }
+
+  .row-hero-coop {
+    padding: 0 5em;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .row-hero-coop:last-child {
+    padding-bottom: 2em;
+  }
+
+  /* 
+  .parallax {
+    background-size: cover;
+  } */
+
+  .volunteer-section {
+    flex-direction: column;
+    margin: auto 2em;
+  }
+
+  .volunteers-img {
+    display: none;
+  }
+} ;
