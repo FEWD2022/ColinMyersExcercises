@@ -11,24 +11,33 @@ document.addEventListener("DOMContentLoaded", async function (e) {
   );
   data = await response.json();
 
-  //Make a for loop to get 5 random menu items
-  for (let i = 0; i < 5; i++) {
-    //pick a random number (within the array)
-    let randomRecipe = Math.floor(Math.random() * data.meals.length);
+  //Make an array
+  const arr = [];
+  while (arr.length < 5) {
+    //Get a random number within the length of the meals array
+    const r = Math.floor(Math.random() * data.meals.length);
 
+    //If it isn't already in the array, add it to the array
+    if (arr.indexOf(r) === -1) {
+      arr.push(r);
+    }
+  }
+
+  //For each item in the array, add it to the DOM
+  arr.forEach((item) => {
     //Image
-    const mealImg = data.meals[randomRecipe].strMealThumb;
+    const mealImg = data.meals[item].strMealThumb;
 
     //title
-    const mealName = data.meals[randomRecipe].strMeal;
+    const mealName = data.meals[item].strMeal;
 
     //5 ingredients
-    const ingredient1 = data.meals[randomRecipe].strIngredient1;
-    const ingredient2 = data.meals[randomRecipe].strIngredient2;
-    const ingredient3 = data.meals[randomRecipe].strIngredient3;
-    const ingredient4 = data.meals[randomRecipe].strIngredient4;
-    const ingredient5 = data.meals[randomRecipe].strIngredient5;
-    const mealLink = data.meals[randomRecipe].strYoutube;
+    const ingredient1 = data.meals[item].strIngredient1;
+    const ingredient2 = data.meals[item].strIngredient2;
+    const ingredient3 = data.meals[item].strIngredient3;
+    const ingredient4 = data.meals[item].strIngredient4;
+    const ingredient5 = data.meals[item].strIngredient5;
+    const mealLink = data.meals[item].strYoutube;
 
     //insert into HTML
     let snippet = `<div class="col d-flex align-items-stretch">
@@ -49,5 +58,5 @@ document.addEventListener("DOMContentLoaded", async function (e) {
   </div>`;
 
     menuRow.innerHTML += snippet;
-  }
+  });
 });
