@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./Images/Favicon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Lexington co&#8226;op markets | Buffalo, NY</title>
   </head>
   <body>
@@ -112,7 +114,9 @@
             <div class="col-10">
               <h2>Support our local economy</h2>
               <p>
-                55¢ of every dollar you spend here returns to the local Buffalo Niagara economy. Now that&#39;s putting your money where your mouth is!
+                55¢ of every dollar you spend here returns to the local Buffalo
+                Niagara economy. Now that&#39;s putting your money where your
+                mouth is!
               </p>
             </div>
           </div>
@@ -124,7 +128,8 @@
             <div class="col-10">
               <h2>Owned by our community</h2>
               <p>
-                By shopping the co-op, you&#39;re supporting a business that is proudly owned by over 15,000 people in your community.
+                By shopping the co-op, you&#39;re supporting a business that is
+                proudly owned by over 15,000 people in your community.
               </p>
             </div>
           </div>
@@ -145,101 +150,32 @@
     </section>
 
     <section class="container-fluid menu">
-      <div class="row">
-        <h1 class="menu-title">Lexi's Kitchen - fresh foods prepared daily</h1>
-        <div class="col">
+      <h1 class="menu-title">Lexi's Kitchen - fresh foods prepared daily</h1>
+      <div class="row menu-row" id="menu">
+        <!-- <div class="col">
           <div class="card">
-          <img
-            src="./Images/Breakfast-burrito.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <img
+              src="${mealImg}"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">${mealName}</h5>
+              <p class="card-text">
+                `${ingredient1}, ${ingredient}, ${ingredient3}, ${ingredient4}, ${ingredient5}`
+              </p>
+              <a href="${mealLink}" class="btn btn-primary">Make it</a>
+            </div>
           </div>
-        </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-          <img
-            src="./Images/beans-and-greens-Soup-1024x713.png"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+        </div> -->
       </div>
-
-      <div class="col">
-        <div class="card">
-        <img
-          src="./Images/Breakfast-sammy-egg-and-hashbrown-4-1024x684.png"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        </div>
-    </div>
-
-    <div class="col">
-      <div class="card">
-      <img
-        src="./Images/Breakfast-sammy-egg-and-hashbrown-4-1024x684.png"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-      </div>
-  </div>
-
-  <div class="col">
-    <div class="card">
-    <img
-      src="./Images/Breakfast-sammy-egg-and-hashbrown-4-1024x684.png"
-      class="card-img-top"
-      alt="..."
-    />
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-    </div>
-</div>
     </section>
 
     <section class="parallax">
-      <img src="./Images/Posters.png" alt="Welcome to your co-op, open to everone"/>
+      <img
+        src="./Images/Posters.png"
+        alt="Welcome to your co-op, open to everone"
+      />
     </section>
 
     <!-- <section class="volunteer container-fluid">
@@ -271,7 +207,7 @@
     </section> -->
 
     <section class="volunteer-section">
-      <img src="./Images/Swag.png" alt="" class="volunteers-img">
+      <img src="./Images/Swag.png" alt="" class="volunteers-img" />
       <div class="volunteers">
         <h2 class="CTA-title">Looking for ways to get involved?</h2>
         <div class="volunteer-buttons">
@@ -281,14 +217,16 @@
         <div class="newsletter">
           <p class="newsletter-text">Sign up for our newsletter</p>
           <form action="submit" class="newsletter-form">
-            <input type="email" placeholder="Enter your email"class="newsletter-input">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="newsletter-input"
+            />
             <a href="#" class="btn secondary">Submit</a>
           </form>
         </div>
-
       </div>
     </section>
-
 
     <footer>
       <div class="footer-text">
@@ -302,6 +240,9 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
+      async
+      defer
     ></script>
+    <script src="./script.js" async defer></script>
   </body>
 </html>
