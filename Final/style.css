@@ -1,4 +1,9 @@
 /* ----- Bootstrap Styles ----- */
+html {
+  max-width: 2400px;
+  margin: 0 auto;
+}
+
 body {
   padding-top: 100px;
 }
@@ -62,7 +67,6 @@ h2 {
 }
 
 .hero-content {
-  padding: 0 auto;
   justify-content: center;
   align-items: center;
 }
@@ -96,15 +100,15 @@ h2 {
 }
 
 /* ----- Parallax Image ----- */
-/* .parallax {
+.parallax {
   background-image: url(./Images/Posters.png);
   background-color: #e5e5e5;
-  min-height: 500px;
-  background-attachment: fixed;
+  min-height: 800px;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-} */
+}
 
 /* ----- Volunteer Section ----- */
 
@@ -226,4 +230,4 @@ footer {
   .volunteers-img {
     display: none;
   }
-} ;
+}
