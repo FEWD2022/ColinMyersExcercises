@@ -2,8 +2,7 @@ const menuRow = document.querySelector("#menu");
 let data = "";
 
 //when page loads, fire the scripts
-
-// document.addEventListener("DOMContentLoaded", async function (e) {
+// Unreliablein this case, do not use!!! -> document.addEventListener("DOMContentLoaded", async function (e) {
 window.addEventListener("load", async function (e) {
   e.preventDefault();
 
