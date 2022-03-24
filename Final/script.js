@@ -2,7 +2,9 @@ const menuRow = document.querySelector("#menu");
 let data = "";
 
 //when page loads, fire the scripts
-document.addEventListener("DOMContentLoaded", async function (e) {
+
+// document.addEventListener("DOMContentLoaded", async function (e) {
+window.addEventListener("load", async function (e) {
   e.preventDefault();
 
   //get the data from the API
